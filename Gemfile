@@ -10,6 +10,7 @@ gem 'rake'
 gem 'shotgun'
 # for debugging
 gem 'pry'
+gem 'rb-readline'
 # for error messages
 gem 'sinatra-flash'
 # helps load dependencies
