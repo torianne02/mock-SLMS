@@ -14,9 +14,11 @@ gem 'pry'
 gem 'sinatra-flash'
 # helps load dependencies
 gem 'require_all'
-# testing
-gem 'rack-test'
-# rspec testing
-gem 'rspec'
 # fast http server
 gem 'thin'
+
+# testing environment
+group :test do 
+  gem 'rspec'
+  gem 'rack-test'
+end 
