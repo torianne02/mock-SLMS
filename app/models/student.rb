@@ -14,4 +14,8 @@ class Student
   def self.all
     @@all
   end 
+
+  def hit_limit?
+    @courses.length < @limit ? false : true
+  end
 end 

@@ -6,10 +6,15 @@ class Course
   def initialize(key, limit)
     @key = key
     @limit = limit
+    @students = []
     @@all << self
   end 
 
   def self.all
     @@all 
   end 
+
+  def hit_limit?
+    @students.length < @limit ? false : true
+  end
 end 
