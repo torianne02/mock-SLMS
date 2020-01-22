@@ -2,7 +2,7 @@ require 'yaml'
 
 class StudentsController < ApplicationController
   get '/students' do
-    Student.all.to_json
+    Student.all.to_yaml
   end 
 
   post '/students' do
@@ -18,7 +18,7 @@ class StudentsController < ApplicationController
       @course.students << @student
     elsif @student.hit_limit == false && @course.hit_limit? == true
       @student.courses << [@course, 'Waitlisted']
-      @
+      @course.waitlist(@student)
     else 
       flash[:message] = "Sorry! It looks like this student has hit their course limit"
     end 
