@@ -1,8 +1,7 @@
-require '.config/environment'
-require 'rack-flash'
+require './config/environment'
+require 'sinatra/flash'
 
 class ApplicationController < Sinatra::Base
-  use Rack::flash
 
   # normally GET '/' would reside here as a home page // not needed for this project
 
