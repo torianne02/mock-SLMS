@@ -17,8 +17,6 @@ gem 'sinatra-flash'
 gem 'require_all'
 # fast http server
 gem 'thin'
-# model interface for non-Active Record models
-gem 'activemodel'
 
 # testing environment
 group :test do 
