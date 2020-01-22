@@ -18,3 +18,5 @@ gem 'require_all'
 gem 'rack-test'
 # rspec testing
 gem 'rspec'
+# fast http server
+gem 'thin'
