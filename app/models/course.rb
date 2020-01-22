@@ -1,10 +1,10 @@
 class Course
-  attr_reader :name, :limit
+  attr_reader :key, :limit
 
   @@all = []
 
-  def initialize(name, limit)
-    @name = name
+  def initialize(key, limit)
+    @key = key
     @limit = limit
     @@all << self
   end 

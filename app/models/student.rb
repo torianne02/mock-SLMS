@@ -1,11 +1,11 @@
 class Student
-  attr_reader :name, :limit
+  attr_reader :id, :limit
   attr_accessor :courses
 
   @@all = []
 
-  def initialize(name, limit)
-    @name = name
+  def initialize(id, limit)
+    @id = id
     @limit = limit
     @courses = []
     @@all << self
@@ -15,4 +15,3 @@ class Student
     @@all
   end 
 end 
-
