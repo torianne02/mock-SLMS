@@ -1,5 +1,5 @@
 # Mock-SLMS
-Welcome to *Mock-SLMS*, a student learning management system built with Sinatra, a Ruby framework. 
+Welcome to *Mock-SLMS*, a student learning management system, built with Sinatra, a Ruby framework. 
 
 ## Installation
 You can install this app by cloning this repository using the command  `git clone https://github.com/torianne02/mock-SLMS.git`
